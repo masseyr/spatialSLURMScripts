@@ -4,7 +4,7 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=64000
 #SBATCH --partition=all
-#SBATCH --output=/home/rm885/slurm-jobs/mosaic_multiple_%j.out
+#SBATCH --output=/home/user/slurm-jobs/mosaic_multiple_%j.out
 
 # SLURM script to mosaic files with multiple search strings in name
 
