@@ -41,7 +41,7 @@ echo $f
 echo $outf
 
 # convert data type to float32
-gdal_translate -of GTiff -ot Float32 -a_nodata 0.330400 $f $tempf
+gdal_translate -of GTiff -ot Float32 -a_nodata 0.0 $f $tempf
 
 # band math calculation
 gdal_calc.py -A $tempf --outfile=$outf --calc="(A*100)*(A>=0) + (A*0)*(A<0)" --NoDataValue=0 --type='Byte'
