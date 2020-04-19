@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-array_job=$(sbatch /scratch/user/prepare_job_array.sh | awk '{ print $4 }')
-sbatch --dependency=afterany:$array_job /scratch/user/compile_outputs.sh
+job_array_id=$(sbatch /scratch/user/prepare_job_array.sh | awk '{ print $4 }')
+sbatch --dependency=afterany:$job_array_id /scratch/user/compile_outputs.sh
