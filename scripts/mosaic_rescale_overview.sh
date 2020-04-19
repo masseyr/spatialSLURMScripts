@@ -4,7 +4,7 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=64000
 #SBATCH --partition=all
-#SBATCH --output=/home/user/slurm-jobs/mosaic_2015_new_tif_%j.out
+#SBATCH --output=/home/user/slurm-jobs/mosaic_2000_tif_%j.out
 
 # SLURM script for mosaicing, rescale, and adding overviews
 
