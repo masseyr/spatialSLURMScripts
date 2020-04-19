@@ -4,7 +4,7 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=12000
 #SBATCH --partition=all
-#SBATCH --output=/home/rm885/slurm-jobs/gdal_tif_slurm_%j.out
+#SBATCH --output=/home/user/slurm-jobs/gdal_tif_slurm_%j.out
 
 #This is a SLURM script to uncompress GEE output tif files
 
